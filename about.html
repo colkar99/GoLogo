@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>About us</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <meta name="keywords" content="Getfreshwash.in, Freshwash, Online car wash, online car wash trichy, carwash trichy online, steam wash, foam car wash trichy, car wash liquid, free car wash in trichy, best car wash in trichy, car wash at door step trichy, maruthi car wash, auto wash, bike wash, bus wash in trichy , best car wash in trichy, cheapest car wash in trichy">
-  <meta name="description" content="Getfreshwash.in: car wash online in trichy - maruti, hyundai, honda, tata, mahindra, renault , ford, nissan, datsun, toyota, mg, kia. Free car wash & Cash on Delivery Available.">
+  <meta name="keywords"
+    content="Getfreshwash.in, Freshwash, Online car wash, online car wash trichy, carwash trichy online, steam wash, foam car wash trichy, car wash liquid, free car wash in trichy, best car wash in trichy, car wash at door step trichy, maruthi car wash, auto wash, bike wash, bus wash in trichy , best car wash in trichy, cheapest car wash in trichy">
+  <meta name="description"
+    content="Getfreshwash.in: car wash online in trichy - maruti, hyundai, honda, tata, mahindra, renault , ford, nissan, datsun, toyota, mg, kia. Free car wash & Cash on Delivery Available.">
   <meta name="robots" content="noindex,follow">
   <meta property="og:title" content="FreshWash - Car Wash | One Time Wash | Monthly Subscription | Yearly Subscription">
   <meta property="og:url" content="https://colkar99.github.io/Getfreshwash">
   <meta property="og:type" content="Car wash" />
   <meta property="og:image" content="https://portfolio-karthik.s3.ap-south-1.amazonaws.com/freshwash/sharing.jpg">
-  <meta property="og:description" content="Doorstep Carwash in trichy with low price ,Montly and annual plans available">
+  <meta property="og:description"
+    content="Doorstep Carwash in trichy with low price ,Montly and annual plans available">
   <!-- Favicons -->
   <!-- <link href="img/favicon.png" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon"> -->
@@ -50,86 +54,80 @@
   <div class="click-closed"></div>
   <!--/ Form Search Star /-->
   <div class="box-collapse">
-      <div class="title-box-d">
-        <h3 class="title-d">Book carwash</h3>
-      </div>
-      <span class="close-box-collapse right-boxed ion-ios-close"></span>
-      <div class="box-collapse-wrap form">
-        <form class="form-a">
-          <div class="row">
-            <div class="col-md-12 mb-2">
-              <div class="form-group">
-                <label for="Type">Select brand</label>
-                <select class="form-control form-control-lg form-control-a" id="Type">
-                  <option>Maruthi suzuki</option>
-                  <option>Nissan</option>
-                  <option>Dutsun</option>
-                  <option>Hyundai</option>
-                  <option>Kia</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-12 mb-2">
-              <div class="form-group">
-                <label for="Type">Select Model</label>
-                <select class="form-control form-control-lg form-control-a" id="Type">
-                  <option>Dezire</option>
-                  <option>celerio</option>
-                  <option>Alto</option>
-                  <option>Ciaz</option>
-                  <option>Baleno</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-6 mb-2">
-              <div class="form-group">
-                <label for="city">Select date</label>
-                <input type="date" class="form-control" name="date">
-              </div>
-            </div>
-            <div class="col-md-6 mb-2">
-              <div class="form-group">
-                <label for="bedrooms">Select time</label>
-                <div class="form-group">
-                  <input type="time" class="form-control" name="date">
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-2">
-              <div class="form-group">
-                <label for="city">Name</label>
-                <input type="text" class="form-control" name="date">
-              </div>
-            </div>
-            <div class="col-md-6 mb-2">
-              <div class="form-group">
-                <label for="city">Contact no</label>
-                <input type="text" class="form-control" name="date">
-              </div>
-            </div>
-            <div class="col-md-6 mb-2">
-                <div class="form-group">
-                  <label for="city">Email id</label>
-                  <input type="email" class="form-control" name="date">
-                </div>
-              </div>
-            <div class="col-md-6 mb-2">
-              <div class="form-group">
-                <label for="price">Wash type</label>
-                <select class="form-control form-control-lg form-control-a" id="price">
-                  <option>One Time Wash</option>
-                  <option>Monthly subscription</option>
-                  <option>Annual subscription</option>
-                </select>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <button type="submit" class="btn btn-b">Submit</button>
+    <div class="title-box-d">
+      <h3 class="title-d">Book carwash</h3>
+    </div>
+    <span class="close-box-collapse right-boxed ion-ios-close"></span>
+    <div class="box-collapse-wrap form">
+      <form class="form-a">
+        <div class="row">
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label for="Type">Select brand</label>
+              <select class="form-control form-control-lg form-control-a" id="Type" onchange="myFunction(event)">
+                <option>Maruthi suzuki</option>
+                <option>Nissan</option>
+                <option>Dutsun</option>
+              </select>
             </div>
           </div>
-        </form>
-      </div>
+          <div class="col-md-12 mb-2">
+            <div class="form-group">
+              <label for="Type">Select Model</label>
+              <select class="form-control form-control-lg form-control-a" id="selectBrandType">
+                <option></option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="city">Select date</label>
+              <input type="date" class="form-control" name="date">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="bedrooms">Select time</label>
+              <div class="form-group">
+                <input type="time" class="form-control" name="date">
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="city">Name</label>
+              <input type="text" class="form-control" name="date">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="city">Contact no</label>
+              <input type="text" class="form-control" name="date">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="city">Email id</label>
+              <input type="email" class="form-control" name="date">
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="price">Wash type</label>
+              <select class="form-control form-control-lg form-control-a" id="price">
+                <option>One Time Wash</option>
+                <option>Monthly subscription</option>
+                <option>Annual subscription</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <button type="submit" class="btn btn-b">Submit</button>
+          </div>
+        </div>
+      </form>
     </div>
+  </div>
   <!--/ Form Search End /-->
 
   <!--/ Nav Star /-->
@@ -517,7 +515,7 @@
             </div>
           </div>
         </div> -->
-        <!-- <div class="col-sm-12 col-md-4 section-md-t3">
+  <!-- <div class="col-sm-12 col-md-4 section-md-t3">
           <div class="widget-a">
             <div class="w-header-a">
               <h3 class="w-title-a text-brand">International sites</h3>
@@ -546,7 +544,7 @@
             </div>
           </div>
         </div> -->
-      <!-- </div>
+  <!-- </div>
     </div>
   </section> -->
   <footer>
@@ -640,4 +638,5 @@
   <script src="js/main.js"></script>
 
 </body>
+
 </html>

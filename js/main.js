@@ -7,7 +7,8 @@
       $('#preloader').delay(100).fadeOut('slow', function () {
         $(this).remove();
       });
-    }
+	}
+
   });
 
   // Back to top button
@@ -148,3 +149,33 @@
 	});
 
 })(jQuery);
+var maruthi = [{id:0,value:"Dezire"},{id:1,value:"swift"},{id:1,value:"alto"}];
+var nissan = [{id:0,value:"active"},{id:1,value:"micro"},{id:1,value:"duster"}]; 
+var dutsun = [{id:0,value:"Ready go"},{id:1,value:"Ready go +"},{id:1,value:"Test"}]; 
+function myFunction(event){
+	debugger
+	let options; 
+	if(event.target.value === "Maruthi suzuki"){
+		options = maruthi;
+	}
+	else if(event.target.value === "Nissan"){
+		options = nissan;
+	}
+	else if(event.target.value === "Dutsun"){
+		options = dutsun;
+	}
+
+	loadDropdown(options)
+}
+function loadDropdown(options){
+	var select = document.getElementById("selectBrandType"); 
+	select.innerHTML = null;
+	for(let option of options){
+		var opt = option.value;
+		var el = document.createElement("option");
+		el.textContent = opt;
+		el.value = opt;
+		select.appendChild(el);
+	}
+}
+loadDropdown(maruthi);
