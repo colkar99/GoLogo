@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://colkar99.github.io/Getfreshwash/sitemap.xml
