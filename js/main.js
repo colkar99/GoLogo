@@ -37,7 +37,7 @@
 		items: 1,
 		nav: true,
 		navText: ['<i class="ion-ios-arrow-back" aria-hidden="true"></i>', '<i class="ion-ios-arrow-forward" aria-hidden="true"></i>'],
-		autoplay: true,
+		autoplay: false,
 		autoplayTimeout: 3000,
 		autoplayHoverPause: true
 	});
