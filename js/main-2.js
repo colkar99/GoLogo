@@ -191,11 +191,9 @@ function bookingForm(event){
 		type: "post",
 		data: JSON.stringify(obj),
 		success: function(d) {
-			alert(d);
 			console.log(d)
 		},
 		error: function(d){
-			alert(d);
 			console.log(d);
 		}
 		
