@@ -48,7 +48,7 @@
   ======================================================= -->
 </head>
 
-<body>
+<body id="body">
 
   <div class="click-closed"></div>
   <!--/ Form Search Star /-->
@@ -58,65 +58,76 @@
     </div>
     <span class="close-box-collapse right-boxed ion-ios-close"></span>
     <div class="box-collapse-wrap form">
-      <form class="form-a">
+      <form class="form-a" onsubmit="event.preventDefault(); bookingForm(event)">
         <div class="row">
           <div class="col-md-12 mb-2">
             <div class="form-group">
-              <label for="Type">Select brand</label>
-              <select class="form-control form-control-lg form-control-a" id="Type" onchange="myFunction(event)">
-                <option>Maruthi suzuki</option>
-                <option>Nissan</option>
-                <option>Dutsun</option>
+              <label for="carModel">Select brand</label>
+              <select name="carModel" class="form-control form-control-lg form-control-a" id="carModel"
+                onchange="myFunction(event)" required>
+                <option value="Maruthi">Maruthi suzuki</option>
+                <option value="Nissan">Nissan</option>
+                <option value="Dusun">Dutsun</option>
               </select>
             </div>
           </div>
           <div class="col-md-12 mb-2">
             <div class="form-group">
-              <label for="Type">Select Model</label>
-              <select class="form-control form-control-lg form-control-a" id="selectBrandType">
+              <label for="carVariety">Select Model</label>
+              <select name="carVariety" class="form-control form-control-lg form-control-a" id="carVariety" required>
                 <option></option>
               </select>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="city">Select date</label>
-              <input type="date" class="form-control" name="date">
+              <label for="preferDate">Select date</label>
+              <input type="date" class="form-control" id="preferDate" name="preferDate" required>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="bedrooms">Select time</label>
+              <label for="preferTime">Select time</label>
               <div class="form-group">
-                <input type="time" class="form-control" name="date">
+                <input type="time" id="preferTime" class="form-control" name="preferTime" required>
               </div>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="city">Name</label>
-              <input type="text" class="form-control" name="date">
+              <label for="name">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="city">Contact no</label>
-              <input type="text" class="form-control" name="date">
+              <label for="mobileNo">Contact no</label>
+              <input type="number" class="form-control" id="mobileNo" name="mobileNo" required>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="city">Email id</label>
-              <input type="email" class="form-control" name="date">
+              <label for="email">Email id</label>
+              <input type="email" class="form-control" id="email" name="email" required>
             </div>
           </div>
           <div class="col-md-6 mb-2">
             <div class="form-group">
-              <label for="price">Wash type</label>
-              <select class="form-control form-control-lg form-control-a" id="price">
-                <option>One Time Wash</option>
-                <option>Monthly subscription</option>
-                <option>Annual subscription</option>
+              <label for="washType">Wash type</label>
+              <select name="washType" class="form-control form-control-lg form-control-a" id="washType" required>
+                <option value="OneTimeWash">One Time Wash</option>
+                <option value="Monthly">Monthly subscription</option>
+                <option value="Annual">Annual subscription</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-md-6 mb-2">
+            <div class="form-group">
+              <label for="houseType">House type</label>
+              <select name="houseType" class="form-control form-control-lg form-control-a" id="houseType" required>
+                <option value="Individual House">Individual House</option>
+                <option value="Below 2 floor apartments">Below 2 floor apartments</option>
+                <option value="Abouve 2 floor apartments">Abouve 2 floor apartments</option>
               </select>
             </div>
           </div>

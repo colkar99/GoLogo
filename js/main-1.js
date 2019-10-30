@@ -155,7 +155,7 @@ var dutsun = [{id:0,value:"Ready go"},{id:1,value:"Ready go +"},{id:1,value:"Tes
 function myFunction(event){
 	debugger
 	let options; 
-	if(event.target.value === "Maruthi suzuki"){
+	if(event.target.value === "Maruthi"){
 		options = maruthi;
 	}
 	else if(event.target.value === "Nissan"){
@@ -168,7 +168,7 @@ function myFunction(event){
 	loadDropdown(options)
 }
 function loadDropdown(options){
-	var select = document.getElementById("selectBrandType"); 
+	var select = document.getElementById("carVariety"); 
 	select.innerHTML = null;
 	for(let option of options){
 		var opt = option.value;
@@ -177,5 +177,32 @@ function loadDropdown(options){
 		el.value = opt;
 		select.appendChild(el);
 	}
+}
+function bookingForm(event){
+	debugger
+	let obj = loadFormValue();
+	console.log(obj);
+	var element = document.getElementById("body");
+	element.setAttribute('class',"box-collapse-closed");
+ 	// element.class = "close-box-collapse right-boxed ion-ios-close";
+	// element.click();
+  
+
+}
+function loadFormValue(){
+	let params = (new URL(document.location)).searchParams;
+	let obj = {preferDateTime:{}};
+	obj['carModel'] = document.getElementById('carModel').value;
+	obj['carVariety'] = document.getElementById('carVariety').value;
+	obj.preferDateTime['preferDate'] = document.getElementById('preferDate').value;
+	obj.preferDateTime['preferTime'] = document.getElementById('preferTime').value;
+	obj['name'] = document.getElementById('name').value;
+	obj['mobileNo'] = document.getElementById('mobileNo').value;
+	obj['email'] = document.getElementById('email').value;
+	obj['washType'] = document.getElementById('washType').value;
+	obj['isDoorStep'] = true;
+	obj['houseType'] = document.getElementById('houseType').value;
+	obj['orderFrom'] = params.get('orderFrom') || "organic";
+	return obj;
 }
 loadDropdown(maruthi);
