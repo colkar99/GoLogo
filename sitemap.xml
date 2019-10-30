@@ -1,57 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/index.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/about.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/services.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/one-time-wash.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/monthly.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/yearly.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/contact.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://colkar99.github.io/Getfreshwash/agent-single.html</loc>
-  <lastmod>2019-10-14T13:03:12+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-
-
+<?xml-stylesheet type='text/xsl' href='sitemap.xsl'?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>http://ezclean.co.in/</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/index.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/about.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/services.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/property-grid.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/blog-grid.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/one-time-wash.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/monthly.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/yearly.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/agent-single.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/contact.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/blog-single.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/3</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
+  <url>
+    <loc>http://ezclean.co.in/agents-grid.html</loc>
+    <changefreq>Monthly</changefreq>
+    <priority>1</priority>
+    <lastmod>2019-10-30T05:34:13Z</lastmod>
+  </url>
 </urlset>
