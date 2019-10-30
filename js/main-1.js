@@ -182,6 +182,25 @@ function bookingForm(event){
 	debugger
 	let obj = loadFormValue();
 	console.log(obj);
+	$.ajax({
+		headers: {
+			'Access-Control-Allow-Origin':'*',
+			'Content-Type':'application/json'
+		},
+		url: "http://api.ezclean.co.in/api/order/web-order",
+		type: "post",
+		data: JSON.stringify(obj),
+		success: function(d) {
+			alert(d);
+			console.log(d)
+		},
+		error: function(d){
+			alert(d);
+			console.log(d);
+		}
+		
+		
+	});
 	var element = document.getElementById("body");
 	element.setAttribute('class',"box-collapse-closed");
  	// element.class = "close-box-collapse right-boxed ion-ios-close";
