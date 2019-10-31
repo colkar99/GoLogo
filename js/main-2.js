@@ -187,7 +187,7 @@ function bookingForm(event){
 			'Access-Control-Allow-Origin':'*',
 			'Content-Type':'application/json'
 		},
-		url: "http://api.ezclean.co.in/api/order/web-order",
+		url: "https://api.ezclean.co.in/api/order/web-order",
 		type: "post",
 		data: JSON.stringify(obj),
 		success: function(d) {
