@@ -38,13 +38,16 @@
 
   <!-- Main Stylesheet File -->
   <link href="css/style.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-150726516-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  <!-- =======================================================
-    Theme Name: EstateAgency
-    Theme URL: https://bootstrapmade.com/real-estate-agency-bootstrap-template/
-    Author: BootstrapMade.com
-    License: https://bootstrapmade.com/license/
-  ======================================================= -->
+    gtag('config', 'UA-150726516-1');
+  </script>
+
 </head>
 
 <body id="body">
@@ -62,8 +65,8 @@
           <div class="col-md-12 mb-2">
             <div class="form-group">
               <label for="carModel">Select brand</label>
-              <select name="carModel" class="form-control form-control-lg form-control-a" id="carModel"
-                onchange="myFunction(event)" required>
+              <select name="carModel" class="form-control form-control-lg form-control-a" id="carModel" onchange="myFunction(event)"
+                required>
                 <option value="Maruthi">Maruthi suzuki</option>
                 <option value="Nissan">Nissan</option>
                 <option value="Dusun">Dutsun</option>
@@ -230,9 +233,8 @@
                 width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <div id="map"></div> -->
               <div class="mapouter">
-                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
-                    scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a>
+                <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.emojilib.com"></a>
                 </div>
                 <style>
                   .mapouter {
@@ -262,29 +264,29 @@
                 <div class="row">
                   <div class="col-md-6 mb-3">
                     <div class="form-group">
-                      <input type="text" name="name" class="form-control form-control-lg form-control-a"
-                        placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+                      <input type="text" name="name" class="form-control form-control-lg form-control-a" placeholder="Your Name"
+                        data-rule="minlen:4" data-msg="Please enter at least 4 chars">
                       <div class="validation"></div>
                     </div>
                   </div>
                   <div class="col-md-6 mb-3">
                     <div class="form-group">
-                      <input name="email" type="email" class="form-control form-control-lg form-control-a"
-                        placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
+                      <input name="email" type="email" class="form-control form-control-lg form-control-a" placeholder="Your Email"
+                        data-rule="email" data-msg="Please enter a valid email">
                       <div class="validation"></div>
                     </div>
                   </div>
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <input type="text" name="subject" class="form-control form-control-lg form-control-a"
-                        placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
+                      <input type="text" name="subject" class="form-control form-control-lg form-control-a" placeholder="Subject"
+                        data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject">
                       <div class="validation"></div>
                     </div>
                   </div>
                   <div class="col-md-12 mb-3">
                     <div class="form-group">
-                      <textarea name="message" class="form-control" name="message" cols="45" rows="8"
-                        data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                      <textarea name="message" class="form-control" name="message" cols="45" rows="8" data-rule="required"
+                        data-msg="Please write something for us" placeholder="Message"></textarea>
                       <div class="validation"></div>
                     </div>
                   </div>
