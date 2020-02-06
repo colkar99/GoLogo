@@ -203,6 +203,7 @@
 // 	obj['orderFrom'] = params.get('orderFrom') || "organic";
 // 	return obj;
 // }
+let path = window.location.origin;
 let mainCart;
 function gotoCart(filter) {
 	let filterProduts;
@@ -286,7 +287,9 @@ function initProduct() {
 function gotoProductPage(event) {
 	let productId = event.target.value;
 	localStorage.setItem('productId', productId);
-	window.location = "http://127.0.0.1:5500/products.html"
+	//window.location = "http://127.0.0.1:5500/products.html"
+	window.location = `${path}/GoLogo/products.html`
+
 }
 //Init cart produts to variable
 function myCartInit() {
@@ -380,7 +383,9 @@ let productIndex = mainCart[0].products.findIndex(x => x.productId == productId)
 mainCart[0].products.splice(productIndex,1);
 mainCart[0].totalCost = totalCostCalculator(mainCart[0]);
 localStorage.setItem("cart", JSON.stringify(mainCart));
-window.location = "http://127.0.0.1:5500/my-cart.html";
+//window.location = "http://127.0.0.1:5500/my-cart.html";
+window.location = `${path}/GoLogo/my-cart.html`;
+
 }
 //
 
