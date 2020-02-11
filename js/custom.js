@@ -9,10 +9,10 @@ function addProductToCart(event){
 	let color = document.getElementById('color').value;
 	let embroideryLocation = document.getElementById('embroideryLocation').value;
 	let comments = "Logo cost not added"
-	let addtionaCost = 0;
+	let addtionalCost = 0;
 	debugger
 	if (embroideredBefore == 'no'){
-		 addtionaCost = 300;
+		addtionalCost = 300;
 		 comments = "Logo cost 300 included"
 		}
 	let product = products.find((product)=> product.id == productId);
@@ -22,8 +22,8 @@ function addProductToCart(event){
 		productImage: product.images,
 		quantity:quantity,
 		productPrice: product.price,
-		embroideredBeforeCost: addtionaCost,
-		totalPrice: (product.price * quantity) + addtionaCost,
+		embroideredBeforeCost: addtionalCost,
+		totalPrice: (product.price * quantity) + addtionalCost,
 		size: size,
 		color: color,
 		embroideryLocation: embroideryLocation,
@@ -45,4 +45,21 @@ function addProductToCart(event){
 	localStorage.setItem("cart", JSON.stringify(getCart));
 	//window.location = "http://127.0.0.1:5500/my-cart.html";
 	window.location = `${path}/my-cart.html`
+}
+
+
+function dynamicQuantity(e){
+	e.stopPropagation();
+	let count = 0;
+	let dynamicDivParent = document.getElementById('buttonWrapperParent');
+	let dynamicDiv = document.getElementById('buttonWrapper0');
+	let newDiv = dynamicDiv.cloneNode(true);
+	newDiv.id = `buttonWrapper${dynamicDivParent.children.length -1}`;
+	dynamicDivParent.appendChild(newDiv);
+
+}
+function removeDynamicQuantity(){
+	let dynamicDivParent = document.getElementById('buttonWrapperParent');
+	if(dynamicDivParent.children.length == 2) return;
+	dynamicDivParent.removeChild(dynamicDivParent.lastChild);
 }

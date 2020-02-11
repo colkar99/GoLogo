@@ -198,17 +198,6 @@
                         </div>
                         <div class="col-md-12 mb-2">
                           <div class="form-group">
-                            <label for="size">Size</label>
-                            <select class="form-control" id="size" required>
-                              <option value="adult_small">Adult small</option>
-                              <option value="adult_medium">Adult medium</option>
-                              <option value="adult_large">Adult large</option>
-                              <option value="adult_Xl">Adult XL</option>
-                            </select>
-                          </div>
-                        </div>
-                        <div class="col-md-12 mb-2">
-                          <div class="form-group">
                             <label for="color">Color</label>
                             <select class="form-control" id="color" required>
                               <option value="pink">Pink</option>
@@ -222,10 +211,34 @@
                           <p>Choosed color.</p>
                         </div> -->
                         <hr>
-                        <div class="col-md-12">
-                          <div class="form-group">
-                            <label for="quantity">Quantity</label>
-                            <input type="number" class="form-control" id="quantity" value="1" name="brandLogo" required>
+                        <div id="buttonWrapperParent">
+                          <div style="display: inline-flex;">
+                            <div class="col-md-6">
+                              <button class="btn btn-danger" onclick="event.preventDefault(); dynamicQuantity(event)">+</button>
+                            </div>
+                            <div class="col-md-6">
+                              <button class="btn btn-danger" onclick="event.preventDefault(); removeDynamicQuantity(event)">-</button>
+                            </div>
+                          </div>
+                          <div style="display: inline-flex;" id="buttonWrapper0">
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="quantity">Quantity</label>
+                                <input type="number" class="form-control" id="quantity" value="1" name="brandLogo"
+                                  required>
+                              </div>
+                            </div>
+                            <div class="col-md-5">
+                              <div class="form-group">
+                                <label for="size">Size</label>
+                                <select class="form-control" id="size" required>
+                                  <option value="adult_small">Adult small</option>
+                                  <option value="adult_medium">Adult medium</option>
+                                  <option value="adult_large">Adult large</option>
+                                  <option value="adult_Xl">Adult XL</option>
+                                </select>
+                              </div>
+                            </div>
                           </div>
                         </div>
                         <div class="col-md-12">
