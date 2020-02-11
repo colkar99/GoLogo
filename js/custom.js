@@ -6,7 +6,7 @@ function addProductToCart(event) {
 	let productSizes = createDynamicProductSize();
 	let quantity = calculateQuantity(productSizes);
 	let embroideredBefore = document.getElementById('embroideredBefore').value;
-	let size = document.getElementById('size').value;
+	//let size = document.getElementById('size').value;
 	let color = document.getElementById('color').value;
 	let embroideryLocation = document.getElementById('embroideryLocation').value;
 	let comments = "Logo cost not added"
