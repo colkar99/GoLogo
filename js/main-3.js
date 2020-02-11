@@ -288,7 +288,7 @@ function gotoProductPage(event) {
 	let productId = event.target.value;
 	localStorage.setItem('productId', productId);
 	//window.location = "http://127.0.0.1:5500/products.html"
-	window.location = `${path}/GoLogo/products.html`
+	window.location = `${path}/products.html`
 
 }
 //Init cart produts to variable
@@ -384,7 +384,7 @@ mainCart[0].products.splice(productIndex,1);
 mainCart[0].totalCost = totalCostCalculator(mainCart[0]);
 localStorage.setItem("cart", JSON.stringify(mainCart));
 //window.location = "http://127.0.0.1:5500/my-cart.html";
-window.location = `${path}/GoLogo/my-cart.html`;
+window.location = `${path}/my-cart.html`;
 
 }
 //
