@@ -44,5 +44,5 @@ function addProductToCart(event){
 	}
 	localStorage.setItem("cart", JSON.stringify(getCart));
 	//window.location = "http://127.0.0.1:5500/my-cart.html";
-	window.location = `${path}/GoLogo/my-cart.html`
+	window.location = `${path}/my-cart.html`
 }
