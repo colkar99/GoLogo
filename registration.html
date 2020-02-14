@@ -3,15 +3,17 @@
 
 <head>
     <meta charset="utf-8">
-    <title>EstateAgency Bootstrap Template</title>
+    <title>GoLogo - Polo Shirts, Custom logo polo shirts, Corporate uniform shirts, 100% Cotton T-shirts</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta name="keywords" content="ezclean.co.in,www.ezclean.co.in, ezclean, Online car wash, online car wash trichy, carwash trichy online, steam wash, foam car wash trichy, car wash liquid, free car wash in trichy, best car wash in trichy, car wash at door step trichy, maruthi car wash, auto wash, bike wash, bus wash in trichy , best car wash in trichy, cheapest car wash in trichy">
-    <meta name="description" content="ezclean.co.in: car wash online in trichy - maruti, hyundai, honda, tata, mahindra, renault , ford, nissan, datsun, toyota, mg, kia. Free car wash & Cash on Delivery Available.">
-    <meta property="og:title" content="EzClean - Car Wash | One Time Wash | Monthly Subscription | Yearly Subscription">
-    <meta property="og:url" content="http://ezclean.co.in">
-    <meta property="og:type" content="Car wash" />
-    <meta property="og:image" content="https://portfolio-karthik.s3.ap-south-1.amazonaws.com/freshwash/sharing.jpg">
-    <meta property="og:description" content="Doorstep Carwash in trichy with low price ,Montly and annual plans available">
+    <meta name="keywords" content="gologo.com,www.gologo.com, gologo, Polo Shirts, Custom logo polo shirts, Corporate uniform shirts, 100% Cotton T-shirts">
+    <meta name="description" content="gologo.com,www.gologo.com, gologo, Polo Shirts, Custom logo polo shirts, Corporate uniform shirts, 100% Cotton T-shirts, Low price polo T-shirts,Polo T-shirts online, Polo T-shirts near me, Custom T-shirts, Wholesale T-shirts, Discount polo T-shirts">
+    <link rel="canonical" href="https://ezclean.co.in">
+    <meta property="og:title" content="GoLogo -Polo Shirts, Custom logo polo shirts, Corporate uniform shirts, 100% Cotton T-shirts">
+    <meta property="og:url" content="https://ezclean.co.in">
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GoLogo - Polo Shirts, Custom logo polo shirts, Corporate uniform shirts, 100% Cotton T-shirts">
+    <meta property="og:image" content="https://portfolio-karthik.s3.ap-south-1.amazonaws.com/freshwash/custom-t-shirts.jpeg">
+    <meta property="og:description" content="gologo.com,www.gologo.com, gologo, Polo Shirts, Custom logo polo shirts, Corporate uniform shirts, 100% Cotton T-shirts, Low price polo T-shirts,Polo T-shirts online, Polo T-shirts near me, Custom T-shirts, Wholesale T-shirts, Discount polo T-shirts">
     <!-- Favicons -->
     <link href="img/favicon.png" rel="icon">
     <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -136,18 +138,18 @@
                     <hr>
                 </div>
             </div>
-            <form>
+            <form onsubmit="event.preventDefault();submitForm(event)" novalidate>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="email">Email:</label>
-                            <input type="email" class="form-control" id="email">
+                            <input type="email" class="form-control" id="email" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="pwd">Password:</label>
-                            <input type="password" class="form-control" id="pwd">
+                            <label for="password">Password:</label>
+                            <input type="password" class="form-control" id="password" required>
                         </div>
                     </div>
                 </div>
@@ -159,84 +161,84 @@
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="firstName">First Name:</label>
-                            <input type="text" class="form-control" id="firstName">
+                            <input type="text" class="form-control" id="firstName" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="lastName">Last Name:</label>
-                            <input type="text" class="form-control" id="lastName">
+                            <input type="text" class="form-control" id="lastName" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="Company">Company:</label>
-                            <input type="text" class="form-control" id="Company">
+                            <input type="text" class="form-control" id="company" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="taxId">Tax ID:</label>
-                            <input type="text" class="form-control" id="taxId">
+                            <input type="text" class="form-control" id="taxId" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="phone">Phone:</label>
-                            <input type="number" class="form-control" id="phone">
+                            <label for="phoneNumber">Phone:</label>
+                            <input type="number" class="form-control" id="phoneNumber" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="address">Address:</label>
-                            <input type="text" class="form-control" id="address">
+                            <input type="text" class="form-control" id="address" name="address" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="suiteApt">Suite / Apt:</label>
-                            <input type="text" class="form-control" id="suiteApt">
+                            <input type="text" class="form-control" id="suiteApt" name="address" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="city">City:</label>
-                            <input type="text" class="form-control" id="city">
+                            <input type="text" class="form-control" id="city" name="address" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="country">Country:</label>
-                            <select class="form-control" name="country">
-                                <option>India</option>
+                            <select class="form-control" id="country" name="address" required>
+                                <option value="India">India</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="state">State:</label>
-                            <select class="form-control" name="state">
-                                <option>Tamilnadu</option>
-                                <option>Karnataka</option>
-                                <option>Telugana</option>
-                                <option>Andhra</option>
+                            <select class="form-control" id="state" name="address" required>
+                                <option value="Tamilnadu">Tamilnadu</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Telugana">Telugana</option>
+                                <option value="Andhra">Andhra</option>
                             </select>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="zipPincode">Zip/Pincode</label>
-                            <input type="text" class="form-control" id="zipPincode">
+                            <input type="text" class="form-control" id="zipPincode" name="address" required>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
                             <label for="comments">Comments:</label>
-                            <textarea class="form-control" id="comments"></textarea>
+                            <textarea class="form-control" id="comments" required></textarea>
                         </div>
                     </div>
                     <div class="col-md-12 text-center">
-                        <button class="btn btn-danger">Register</button>
+                        <button type="submit" id="button" class="btn btn-danger">Register</button>
                     </div>
                 </div>
             </form>
@@ -359,7 +361,42 @@
     <!-- Template Main Javascript File -->
     <script src="js/main-3.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        function submitForm(event) {
+            let data = { billingAddress: {} };
+            for (let item of event.target.elements) {
+                console.log(item.id)
+                if (item.name != "") {
+                    data.billingAddress[item.id] = item.value;
+                }
+                else if (item.id == "button") {
 
+                }
+                else {
+                    data[item.id] = item.value;
+                }
+            }
+            console.log(JSON.stringify(data));
+            //$('#preloader').show();
+            // $.ajax({
+            //     headers: {
+            //         'Access-Control-Allow-Origin': '*',
+            //         'Content-Type': 'application/json'
+            //     },
+            //     url: `${local_url}/order/web-order`,
+            //     type: "post",
+            //     data: JSON.stringify(obj),
+            //     success: function (d) {
+            //         console.log(d)
+            //     },
+            //     error: function (d) {
+            //         console.log(d);
+            //     }
+
+
+            // });
+        }
+    </script>
 
 </body>
 

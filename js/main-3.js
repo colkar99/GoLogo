@@ -5,7 +5,7 @@
 	$(window).on('load', function () {
 		if ($('#preloader').length) {
 			$('#preloader').delay(100).fadeOut('slow', function () {
-				$(this).remove();
+				$(this).hide()
 			});
 		}
 
@@ -204,6 +204,9 @@
 // 	return obj;
 // }
 let path = window.location.origin;
+let local_url = "http://localhost:8080/";
+let dev_url = "http://localhost:8080/api";
+
 let mainCart;
 function gotoCart(filter) {
 	let filterProduts;
